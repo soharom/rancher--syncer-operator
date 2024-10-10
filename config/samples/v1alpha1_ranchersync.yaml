@@ -1,0 +1,9 @@
+apiVersion: rancher.sync.io/v1alpha1
+kind: RancherSync
+metadata:
+  labels:
+    app.kubernetes.io/name: rancher-config-sync-operator
+    app.kubernetes.io/managed-by: kustomize
+  name: ranchersync-sample
+spec:
+  # TODO(user): Add fields here
