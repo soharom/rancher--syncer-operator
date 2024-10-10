@@ -1,8 +1,12 @@
 # rancher-config-sync-operator
-// TODO(user): Add simple overview of use/purpose
+This is golang operator for rancher config syncing with kubernets secret
 
 ## Description
-// TODO(user): An in-depth paragraph about your project and overview of use
+In this project i tried to solve the issue  , that is  the kubeconfig secrets for each cluster in rancher should be automatically added to kubenetes cluster to be consumed after by deffirent application to acceess to those clusters using native secrets resources in kubernets where the operator is installed , the case it could be jenkins , Argocd , Drone CI, or even custom application that needs access to other cluster to do some operations for now :
+- The secret are only created and not update will be accured .
+- Kubeconfig will be for admin user .
+- The status is not applied for the CRD and focusing only in the logs to track the process .
+
 
 ## Getting Started
 
